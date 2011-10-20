@@ -29,20 +29,19 @@ function perf(fn, params, times){
 }
 /*
 
-Example:
-
-function eq2(){
-	return 1 == '1';
-}
-
-function eq3(){
-	return 1 === '1';
-}
+Examples:
 
 console.log(
-	'"===" is', 
-	perf(eq2, [], 1e7) / perf(eq3, [], 1e7)
-	,' times faster, than "=="'
-);
+	'=== is',
+	perf(function(){return 1 == '1'}, [], 1e6) / perf(function(){return 1 === '1'}, [], 1e6)
+	,' times faster, than =='
+)
+
+console.log(
+	'split',
+	perf(function(){return '324.432'.split('.')[1]}, [], 1e6),
+	'replace',
+	perf(function(){return '324.432'.replace(/^.*\./,'')},[],1e6)
+)
 
 //*/
