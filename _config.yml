@@ -1,0 +1,9 @@
+# Site settings
+title: Indamix
+description: 'Indamix: Front End Engineer · Startup Co-founder · Open-source Contributor'
+baseurl: ''
+url: 'http://indamix.github.io'
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title
