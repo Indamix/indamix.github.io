@@ -1,14 +1,3 @@
 ---
 layout: default
 ---
-<script>
-  var posts = [
-  {% for post in site.posts %}
-  {
-    date: '{{ post.date | date: "%b %-d, %Y" }}',
-    link: '{{ post.url | prepend: site.baseurl }}',
-    title: '{{ post.title }}'
-  },
-  {% endfor %}
-  ]
-</script>

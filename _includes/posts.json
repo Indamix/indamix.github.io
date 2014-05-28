@@ -1,0 +1,8 @@
+[{% for post in site.posts %}
+  {
+    date: '{{ post.date | date: "%b %-d, %Y" }}',
+    link: '{{ post.url }}',
+    title: '{{ post.title }}',
+    tags: {{ post.tags | jsonify }}
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}]
