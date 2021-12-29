@@ -1,1 +1,1 @@
-# [indamix.github.io](http://indamix.github.io/)
+# [indamix.github.io](https://indamix.github.io/)
